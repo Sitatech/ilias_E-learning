@@ -1,0 +1,21 @@
+<tr class="{CSS_ROW}">
+	<td class="std" style="vertical-align: top">
+		<input type="checkbox" name="q_id[]" value="{QUESTION_ID}" id="cb_{QUESTION_ID}" {VAL_CHECKED} />
+	</td>
+	<td class="{COLOR_CLASS}" name="order[{QUESTION_ID}]">{QUESTION_POSITION}</td>
+	<td class="std" style="vertical-align: top">
+            <!-- BEGIN tst_qst_warning -->
+                <img src="{IMAGE_WARNING}" border="0" alt="{ALT_WARNING}" title="{TITLE_WARNING}" />
+            <!-- END tst_qst_warning -->
+            {QUESTION_TITLE}
+        </td>
+	
+	<!-- BEGIN tst_obligatory -->
+	<td class="std" style="vertical-align: top">{QUESTION_OBLIGATORY}</td>
+	<!-- END tst_obligatory -->
+	<td class="std" style="vertical-align: top">{QUESTION_COMMENT}</td>
+	<td class="std" style="vertical-align: top">{QUESTION_TYPE}</td>
+	<td class="std" style="vertical-align: top">{QUESTION_POINTS}</td>
+	<td class="std" style="vertical-align: top">{QUESTION_AUTHOR}</td>
+	<td class="std" style="vertical-align: top">{QUESTION_POOL}</td>
+</tr>

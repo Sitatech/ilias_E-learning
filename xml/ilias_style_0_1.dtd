@@ -1,0 +1,23 @@
+<!-- ilias_style.dtd for ILIAS Styles -->
+<!-- For comments refer to our mailing list: xml-ilias@uni-koeln.de -->
+<!-- $Id: ilias_style_0_1.dtd 5188 2004-10-07 13:03:01Z akill $ -->
+
+<!-- Styles -->
+<!ELEMENT StyleSheet (Title, Description+, Style*)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Description (#PCDATA)>
+
+
+<!-- Style -->
+<!ELEMENT Style (StyleParameter*)>
+<!ATTLIST Style
+	Tag CDATA #REQUIRED
+	Class CDATA #REQUIRED
+>
+
+<!-- StyleParameter -->
+<!ELEMENT StyleParameter EMPTY>
+<!ATTLIST StyleParameter
+	Name CDATA #REQUIRED
+	Value CDATA #REQUIRED
+>
